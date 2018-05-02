@@ -1,0 +1,31 @@
+.resume{
+    font-size:35px;
+    font-weight:bold;
+}
+.ul-style{
+    list-style-type: none;
+    padding-left:0;
+}
+.li-style{
+    float:left;
+    width:90%;
+}
+.abbreviation{
+    font-weight:bold;
+    font-size:25px;
+}
+.content-style-0{
+    font-weight:bold;
+    float:left;
+    padding-right:40px;
+}
+.content-style-1{
+    font-weight:normal;
+    padding-top:0;
+    margin-top:0;
+}
+.content-style-2{
+    padding-bottom:0;
+    margin-bottom:0;
+    font-weight:bold;
+}
