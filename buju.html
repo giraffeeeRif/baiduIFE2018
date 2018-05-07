@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>buju</title>
+        <style>
+            .container{
+                width:100%;
+                margin:0 auto;
+                overflow: hidden;
+                height:100%;
+            }
+            .header{
+                width:100%;
+                background-color:#3c3c3c;
+                height:80px;
+                display:inline-block;
+                position:relative;
+            }
+            .logo{
+                display:inline-block;
+                font-size:25px;
+                color: aliceblue;
+                position: absolute;
+                left:100px;
+            }
+            .link-parent{
+                display:inline-block;
+                list-style-type: none;
+                position: absolute;
+                right:10%
+            }
+            .link-child{
+                display:inline-block;
+            }
+            .visit:link{
+                color:aliceblue;
+            }
+            .visit:visited{
+                color:darkviolet;
+            }
+            .visit:hover{
+                color:dodgerblue;
+            }
+            .visit:active{
+                color:forestgreen;
+            }
+            .Banner{
+                width:100%;
+                background-color:#00BB00;
+                height:300px;
+                position:relative;
+            }
+            .option{
+                position: absolute;
+                right:12%;
+                bottom:10px;
+                display:inline;
+            }
+            .option-ul{
+                list-style-type: none;
+                display:table;
+                position: relative;
+            }
+            .option-li,.option-li-choosed{
+                display:table-cell;
+                color:black;
+                background-color:#79FF79;
+                height:35px;
+                width:25px;
+                padding:0;
+                text-align:center;
+                vertical-align: middle;
+                position: absolute;
+                bottom:0;
+            }
+            .b0{
+                left:0;
+            }
+            .b1{
+                background-color:#BBFFBB;
+                height:45px;
+                left:30px;
+            }
+            .b2{
+                left:60px;  
+            }
+            .b3{
+                left:90px;
+            }
+            .main{
+                width:100%;
+            }
+            .main-header{
+                width:100%;
+                height:70px;
+                margin:0 0 10px 0;
+                padding:0;
+                position:relative;
+            }
+            .main-header-left{
+                width:100px;
+                margin:0;
+                padding:0;
+                position:absolute;
+                bottom:0;
+                border-bottom:1px solid gray;
+            }
+            .main-header-home,.main-header-profile,.main-header-about{
+                width:70px;
+                height:35px;
+                position: absolute;
+                margin:0;
+                padding:0;
+                bottom:0;
+                border:1px solid gray;
+                border-bottom:0;
+                border-top-left-radius:1em;
+                border-top-right-radius:1em;
+                text-align:center;
+                line-height:35px;
+                font-size:10px;
+            }
+            .main-header-home{
+                left:100px;
+            }
+            .main-header-profile{
+                left:171px;
+                background-color:darkgray;
+            }
+            .main-header-about{
+                left:242px;
+                background-color:darkgray;
+            }
+            .main-header-right{
+                left:313px;
+                width:calc(100% - 312px);
+                margin:0;
+                padding:0;
+                position:absolute;
+                bottom:0;
+                border-bottom:1px solid gray;
+            }
+            .footer{
+                width:100%;
+                height:120px;
+                background-color:dimgray;
+            }
+            .text{
+                width:100%;
+                margin:0 auto;
+                height:60px;
+                line-height:60px;
+                color:aliceblue;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <p class='logo'>Logo</p>
+                <ul class="link-parent">
+                    <li class="link-child"><a href="https://github.com/jialebaba" class="visit">Github</a></li>
+                    <li class="link-child"><a href="https://github.com/jialebaba" class="visit">Register</a></li>
+                    <li class="link-child"><a href="https://github.com/jialebaba" class="visit">Login</a></li>
+                </ul>
+            </div>
+            <div class="Banner">
+                <div class="option">
+                    <ul class="option-ul">
+                        <li class="option-li b0">1</li>
+                        <li class="option-li b1">2</li>
+                        <li class="option-li b2">3</li>
+                        <li class="option-li b3">4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-header">
+                    <div class="main-header-left"></div>
+                    <div class="main-header-home">HOME</div>
+                    <div class="main-header-profile">PROFILLE</div>
+                    <div class="main-header-about">ABOUT</div>
+                    <div class="main-header-right"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="text">2018 ife.baidu.com</div>
+            </div>
+        </div>
+    </body>
+</html>
