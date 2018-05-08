@@ -4,8 +4,10 @@
         <style>
             .container{
                 width:100%;
+                min-width: 500px;
                 margin:0 auto;
-                overflow: hidden;
+                overflow-y: auto;
+                overflow-x: hidden;
                 height:100%;
             }
             .header{
@@ -26,7 +28,7 @@
                 display:inline-block;
                 list-style-type: none;
                 position: absolute;
-                right:10%
+                right:100px;
             }
             .link-child{
                 display:inline-block;
@@ -51,26 +53,23 @@
             }
             .option{
                 position: absolute;
-                right:12%;
+                right:100px;
                 bottom:10px;
-                display:inline;
             }
             .option-ul{
                 list-style-type: none;
-                display:table;
-                position: relative;
             }
             .option-li,.option-li-choosed{
-                display:table-cell;
                 color:black;
                 background-color:#79FF79;
                 height:35px;
+                line-height: 35px;
                 width:25px;
                 padding:0;
                 text-align:center;
-                vertical-align: middle;
-                position: absolute;
-                bottom:0;
+                vertical-align: bottom;
+                display: inline-block;
+                margin-left:2px;
             }
             .b0{
                 left:0;
@@ -78,6 +77,7 @@
             .b1{
                 background-color:#BBFFBB;
                 height:45px;
+                line-height: 45px;
                 left:30px;
             }
             .b2{
@@ -139,6 +139,56 @@
                 bottom:0;
                 border-bottom:1px solid gray;
             }
+            .content{
+                overflow: hidden;
+                margin:0 auto;
+                width:calc(100% - 200px);
+                margin-bottom:10px;
+            }
+            .content-left-0,.content-middle-0,.content-right-0,.content-left-1,
+            .content-middle-1-0,.content-middle-1-1,.content-right-1,
+            .content-left-2,.content-middle-2,.content-right-2{
+                float:left;
+                margin-right:5px;
+                padding:0;
+                height:150px;
+                border:1px gray solid;
+                text-align:center;
+                line-height:150px;
+            }
+            .content-left-0{
+                width:calc(45% - 7px);
+            }
+            .content-middle-0{
+                width:calc(20% - 7px);
+            }
+            .content-right-0{
+                margin-right:0;
+                width:calc(35% - 2px);
+            }
+            .content-left-1{
+                width:calc(25% - 7px);
+            }
+            .content-middle-1-0{
+                width:calc(25% - 7px);
+            }
+            .content-middle-1-1{
+                width:calc(25% - 7px);
+            }
+            .content-right-1{
+                margin-right:0;
+                width:calc(25% - 2px);
+            }
+            .content-left-2{
+                width:calc(33% - 7px);
+            }
+            .content-middle-2{
+                width:calc(33% - 7px);
+            }
+            .content-right-2{
+                margin-right:0;
+                width:calc(34% - 2px);
+            }
             .footer{
                 width:100%;
                 height:120px;
@@ -181,6 +231,22 @@
                     <div class="main-header-profile">PROFILLE</div>
                     <div class="main-header-about">ABOUT</div>
                     <div class="main-header-right"></div>
+                </div>
+                <div class="content">
+                    <div class="content-left-0">This is Content 1</div>
+                    <div class="content-middle-0">Maybe Content 2</div>
+                    <div class="content-right-0">Content 3</div>
+                </div>
+                <div class="content">
+                    <div class="content-left-1">Content 4</div>
+                    <div class="content-middle-1-0">Content 5</div>
+                    <div class="content-middle-1-1">Content 6</div>
+                    <div class="content-right-1">Content 7</div>
+                </div>
+                <div class="content">
+                    <div class="content-left-2">Content 8</div>
+                    <div class="content-middle-2">Content 9</div>
+                    <div class="content-right-2">Content 10</div>
                 </div>
             </div>
             <div class="footer">
