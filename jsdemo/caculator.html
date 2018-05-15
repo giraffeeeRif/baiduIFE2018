@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>hexConversion</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var add=$("#add-btn");
+        var minus=$("#minus-btn");
+        var times=$("#times-btn");
+        var divide=$("#divide-btn");
+        add.click(function(first,second){
+            var first=parseInt($("#first-number").val());
+            var second=parseInt($("#second-number").val());
+            var result=$("#result");
+            try{
+                var computer=first+second;
+                if(isNaN(computer)) throw "wrong";
+                result.text(computer);
+            }catch(err){
+                alert(err);
+            }
+        });
+        minus.click(function(first,second){
+            var first=parseInt($("#first-number").val());
+            var second=parseInt($("#second-number").val());
+            var result=$("#result");
+            try{
+                var computer=first-second;
+                if(isNaN(computer)) throw "wrong";
+                result.text(computer);
+            }catch(err){
+                alert(err);
+            }
+        });
+        times.click(function(first,second){
+            var first=parseInt($("#first-number").val());
+            var second=parseInt($("#second-number").val());
+            var result=$("#result");
+            try{
+                var computer=first*second;
+                if(isNaN(computer)) throw "wrong";
+                result.text(computer);
+            }catch(err){
+                alert(err);
+            }
+        });
+        divide.click(function(first,second){
+            var first=parseInt($("#first-number").val());
+            var second=parseInt($("#second-number").val());
+            var result=$("#result");
+            try{
+                var computer=first/second;
+                if(isNaN(computer)) throw "wrong";
+                result.text(computer);
+            }catch(err){
+                alert(err);
+            }
+        });
+    </script>
+</body>
+</html>

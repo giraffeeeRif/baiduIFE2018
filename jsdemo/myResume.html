@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <title>MyResume</title>
+    <style type="text/css">
+        *{
+            background-image:url(https://shared-https.ydstatic.com/note/edm/ynoteBackground/bgImage/c-21.png);
+        }
+        .container {
+            width: 100%;
+            line-height: 24px;
+        }
+        
+        div.footer{
+            border-top:1px solid #999;
+            margin-top:10px;
+        }
+
+        div.footer p{
+            float:right;
+        }
+
+        .title {
+            text-align: left;
+            font-size: 30px;
+            margin: 10px;
+            border-bottom: 1px solid #999;
+            line-height: 50px;
+        }
+
+        dl {
+            display: table-row;
+        }
+
+        dt,
+        dd {
+            float: left;
+            display: table-cell;
+            text-align: left;
+        }
+
+        dt {
+            font-style:italic;
+            text-align: right;
+            width: 150px;
+            margin: 0px;
+            padding-right: 25px;
+            padding: 0px 25px 20px 0px;
+        }
+
+        dd {
+            border-left: 1px solid #999;
+            margin: 0px;
+            padding: 0px 0px 20px 25px;
+        }
+
+        dd p {
+            margin: 0px;
+        }
+
+        dd h3,
+        h4 {
+            margin: 0 0 3px 0;
+        }
+
+        img {
+            float: right;
+            height: 150px;
+            position:relative;
+            left:-20px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            var nowDate=new Date();
+            var curr=nowDate.toLocaleTimeString().slice(0,2);
+            if(curr=="上午"){
+                alert("上午好！");
+            }else if(curr=="下午"){
+                alert("下午好！");
+            }
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=0b079dce64224f4a43947b41689efb37/5fdf8db1cb134954b0df038c5f4e9258d0094a11.jpg">
+        <div class="title">My resume</div>
+        <dl>
+            <dt>Name:</dt>
+            <dd>
+                Yanzu Wu
+            </dd>
+        </dl>
+        <dl>
+            <dt>tel:</dt>
+            <dd>
+                19999999999
+            </dd>
+        </dl>
+        <dl>
+            <dt>email:</dt>
+            <dd>
+                19999999999@163.com
+            </dd>
+        </dl>
+        <dl>
+            <dt>Introduce:</dt>
+            <dd>
+                <h3>Handsome!</h3>
+                <h3>Handsome!</h3>
+                <h3>Handsome!</h3>
+            </dd>
+        </dl>
+        <dl>
+            <dt>education:</dt>
+            <dd>
+                <h4>2020-2024:</h4>
+                <p>JiaLidun University</p>
+                <h4>2024-2027:</h4>
+                <p>DunJiali University</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>skills:</dt>
+            <dd>
+                <h3>Computer Skills:</h3>
+                <p>c++,java,python,javascript
+                    <br/>(All of above are unskilled)</p>
+                <h3>Sport skills:</h3>
+                <p>Basketball,tennis,football,badminton
+                    <br/>(can't paly any of them)</p>
+                <h3>Special skills:</h3>
+                <p>Eat and sleep
+                    <br/>(I'm very good at all of these)</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>Experience:</dt>
+            <dd>
+                <p>I'm just a handsome boy without any story</p>
+            </dd>
+        </dl>
+        <div class="footer">
+            <button id="surprise">click here</button>
+            <p>write by renyifei</p>
+        </div>
+    </div>
+    <script>
+        var btn=$("#surprise");
+        btn.click(function(){
+            alert("surprise mother fucker!!!");
+        });
+    </script>
+</body>
+
+</html>

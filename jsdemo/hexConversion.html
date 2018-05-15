@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>hexConversion</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    
+    <script>
+        var btn=$("#trans-btn");
+        btn.click(function(){
+            var number=$("#dec-number").val();
+            var len=$("#bin-bit").val();
+            var result=$("#result");
+            num=dec2bin(number,len);
+            result.text("运行结果:"+num);
+        });
+        function dec2bin(decNumber,binBit=1){
+            var arr=new Array();
+            var str=new String();
+            var num=decNumber;
+            for (var i = 0; 1; i++) {
+                if (num / 2 >= 1) {
+                    arr[i] = num % 2;
+                    num = parseInt(num / 2);
+                } else {
+                    arr[i] = 1;
+                    break;
+                }
+            }
+            for (i = arr.length-1; i >=0; i--) {
+                str+=arr[i];
+            }
+            if(binBit>=(arr.length)){
+                return str
+            }
+            else{
+                console.log("wrong");
+                return str;   
+            }
+            
+        }
+    </script>
+</body>
+</html>
